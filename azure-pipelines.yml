@@ -11,7 +11,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/*.sln'
+  solution: '**/GenerateFilesTest1.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
@@ -36,7 +36,7 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: pack
-    packagesToPack: '**/*.csproj'
+    packagesToPack: '**/GenerateFilesTest1.csproj'
     
 - task: NuGetCommand@2
   inputs:
