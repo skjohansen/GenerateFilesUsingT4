@@ -11,5 +11,5 @@
         <!-- ... -->
     </metadata>
     <!-- Optional 'files' node -->
-	<file src="*.txt" target="GenerateFilesTest1" exclude="CodeTemplate1.txt" />
+	<file src="**\*.txt" target="content" exclude="CodeTemplate1.txt" />
 </package>
